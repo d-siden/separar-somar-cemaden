@@ -18,7 +18,7 @@ Para ser utilizado puramente como está aqui, os DADOS DE ENTRADA devem ter as s
       a coluna datahora deve conter valores na seguinte formatação: _aaaa-MM-dd_. Tudo após -dd é ignorado.
       
 Resultado: arquivos .csv com somas diárias de precipitação de cada estação presente na cidade, com colunas separadas por ; e decimal após ,\
-Cada arquivo vai conter acumulados diários de uma estação diferente (opcional) em um mês diferente (opcional).
+Cada arquivo vai conter acumulados diários de uma estação diferente (se houver) em um mês.
 
 **Adaptações necessárias em cada rodada:**\
 1 - O endereço e formatação dos arquivos de entrada nas primeiras linhas\
@@ -30,6 +30,7 @@ Cada arquivo vai conter acumulados diários de uma estação diferente (opcional
 2 - O endereço de saída perto do final da função diarize():\
 *write.csv2(...\
               file = sprintf("%s-%s-diario-aracaju-2022.csv", fator, substr(fatordata, 1, 7)),\
+              ...\
               )*
               
 Não esquecer de rodar a função no seu mês ao final ;)
