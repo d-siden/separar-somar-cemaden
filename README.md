@@ -20,7 +20,7 @@ Os arquivos terão o nome "<estação>-horario.csv", um para cada estação.\
 Onde <estação> é o nome da estação.
 
 #### Para diário use horario = FALSE:
-> ORDENAR_CEMADEN(endereco = ""/home/caminho/de/linux/dados-do-cemaden.csv", horario = T)
+> ORDENAR_CEMADEN(endereco = ""/home/caminho/de/linux/dados-do-cemaden.csv", horario = F)
 
 Os arquivos terão o nome "<estação>-AAAA-MM-diario.csv".\
 Onde AAAA é o ano e MM o mês.
