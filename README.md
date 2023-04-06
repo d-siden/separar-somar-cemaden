@@ -16,13 +16,13 @@ Passar o arquivo .csv para a função e informar se quer saídas em dado horári
 #### Para horário use horario = TRUE:
 > ORDENAR_CEMADEN(endereco = "/home/caminho/de/linux/dados-do-cemaden.csv", horario = T)
 
-Os arquivos terão o nome "<estação>-horario.csv", um para cada estação.\
-Onde <estação> é o nome da estação.
+Os arquivos terão o nome "<estação_codigo>-horario.csv", um para cada estação.\
+Onde <estação_codigo> é o nome + o código da estação.
 
 #### Para diário use horario = FALSE:
 > ORDENAR_CEMADEN(endereco = ""/home/caminho/de/linux/dados-do-cemaden.csv", horario = F)
 
-Os arquivos terão o nome "<estação>-AAAA-MM-diario.csv".\
+Os arquivos terão o nome "<estação_codigo>-AAAA-MM-diario.csv".\
 Onde AAAA é o ano e MM o mês.
 
 Uma mensagem dirá em qual pasta esses arquivos foram salvos.\
